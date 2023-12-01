@@ -54,7 +54,7 @@ a {
   margin-right: auto;
   margin-left: auto;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 360px) {
   .container {
     width: 360px;
   }
@@ -107,7 +107,7 @@ a {
   padding-bottom: 6px;
   padding-left: 16px;
   padding-right: 16px;
-  min-width: 132px;
+  /* min-width: 132px; */
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
