@@ -49,22 +49,24 @@ a {
   text-decoration: none;
 }
 .container {
-  padding-left: 16px;
-  padding-right: 16px;
   margin-right: auto;
   margin-left: auto;
 }
 @media screen and (min-width: 360px) {
   .container {
+    padding-left: 16px;
+    padding-right: 16px;
     width: 360px;
   }
 }
 
-/* @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .container {
+    padding-left: 64px;
+    padding-right: 64px;
     width: 1440px;
   }
-} */
+}
 .header-container {
   padding-left: 0;
   padding-right: 0;
@@ -99,15 +101,12 @@ a {
   box-shadow: 0px 8px 16px -8px rgba(15, 15, 15, 0.1);
 }
 
-/* .header__middle-btn {
-} */
 .header__middle-btn--text {
   display: inline-block;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 16px;
   padding-right: 16px;
-  /* min-width: 132px; */
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -187,26 +186,38 @@ a {
   background-color: var(--background-color-header);
   border-radius: 16px;
 }
-.comment__athor-about {
+.comment__author-about {
   padding: 12px;
   display: flex;
   gap: 8px;
   background-color: var(--background-color-header-middle);
   border-radius: 16px;
 }
-.comment__athor-descr {
+@media screen and (min-width: 1440px) {
+  .comment__author-alltext {
+    display: flex;
+    gap: 900px;
+  }
+}
+.comment__author-descr {
   padding-bottom: 12px;
-  width: 100%;
+  /* width: 100%; */
   border-bottom: 1px solid var(--background-color-card);
 }
-.comment__athor-title {
+@media screen and (min-width: 1440px) {
+  .comment__author-descr {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+.comment__author-title {
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 1.75;
   color: var(--color-text-second);
 }
-.comment__athor-text {
+.comment__author-text {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -217,6 +228,14 @@ a {
   padding-top: 12px;
   gap: 12px;
 }
+@media screen and (min-width: 1440px) {
+  .comment__data {
+    flex-direction: row-reverse;
+    gap: 24px;
+    align-items: center;
+    padding-top: 0;
+  }
+}
 .comment__data-text {
   font-size: 12px;
   font-style: normal;
@@ -224,6 +243,11 @@ a {
   line-height: 1.33;
   display: flex;
   gap: 2px;
+}
+@media screen and (min-width: 1440px) {
+  .comment__data-text {
+    gap: 4px;
+  }
 }
 .comment-title {
   font-size: 16px;
@@ -262,14 +286,15 @@ a {
   background-color: var(--background-color-header);
 }
 
-.apps {
+.footer__card {
+  width: 100%;
   padding-top: 8px;
   padding-bottom: 8px;
   border-radius: 12px;
   background-color: var(--background-color-header-middle);
 }
 
-.apps__title {
+.footer__title {
   margin-bottom: 8px;
   font-size: 14px;
   font-style: normal;
@@ -288,34 +313,62 @@ a {
   display: flex;
   gap: 4px;
 }
-.payments {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  border-radius: 12px;
-  background-color: var(--background-color-header-middle);
-}
-
-.payments__title {
-  margin-bottom: 8px;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 2;
-  text-align: center;
-}
-
 .payments__list {
   display: flex;
   gap: 8px;
   justify-content: center;
 }
-.less{
+.card-terms {
+  display: flex;
+  gap: 16px;
+}
+.card-text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5;
   display: flex;
   justify-content: center;
-  gap:6px;
-  font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.71;
-    color: var(--color-acent);
+  gap: 12px;
 }
+.less {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  color: var(--color-acent);
+}
+@media screen and (min-width: 1440px) {
+  .footer__container {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .apps {
+    width: 228px;
+  }
+  .payments {
+    width: 248px;
+  }
+  .deposit {
+    width: 158.5px;
+  }
+  .footer__title {
+    text-align: left;
+    margin-left: 12px;
+  }
+  .card-text {
+    justify-content: start;
+    margin-left: 12px;
+  }
+  .less {
+    display: none;
+  }
+}
+/* @media screen and (min-width: 1440px) {
+  .comment-descr {
+   
+  }
+} */
