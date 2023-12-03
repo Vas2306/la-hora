@@ -20,6 +20,7 @@ sans-serif; */
   --color-card: #2d2f45;
   --color-icon: #686e80;
   --color-star: #ffd058;
+  --color-black:#000000;
 }
 body {
   background-color: var(--background-color);
@@ -96,7 +97,7 @@ a {
   padding-right: 16px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   background-color: var(--background-color-header-middle);
   box-shadow: 0px 8px 16px -8px rgba(15, 15, 15, 0.1);
 }
@@ -107,6 +108,7 @@ a {
   padding-bottom: 6px;
   padding-left: 16px;
   padding-right: 16px;
+  margin-right: 12px;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -120,6 +122,9 @@ a {
   font-style: normal;
   font-weight: 600;
   line-height: 16px;
+  color: var(--color-text-second);
+}
+.text-background {
   background-color: var(--color-text-second);
   background-image: linear-gradient(
     90deg,
@@ -188,6 +193,57 @@ a {
   }
   .header__desktop-icon {
     margin-right: 8px;
+  }
+  .header__middle-btn--text{
+    margin-right: 0;
+  }
+  .header__desktop-middle{
+    padding-bottom: 8px;
+    padding-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .header__desktop-middle-nav{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+
+  }
+  .header__desktop-section{
+   background-color: #fafafa; 
+box-shadow: -2px -4px 9px 0px rgba(157, 157, 157, 0.11);
+  -webkit-box-shadow: -2px -4px 9px 0px rgba(157, 157, 157, 0.11);
+  -moz-box-shadow: -2px -4px 9px 0px rgba(157, 157, 157, 0.11);
+  }
+  .header__desktop-middle--firstlink{
+   
+    font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.33;
+     color: var(--color-icon);
+  }
+  .link-center{
+    display: flex;
+    align-items: center;
+  }
+  .header__desktop-bottom--section{
+    background-color: var(--background-color);
+  }
+  .header__desktop-bottom{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .header__desktop-bottom--text{
+    font-size: 10px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      color: var(--color-black);
   }
 }
 .hero {
